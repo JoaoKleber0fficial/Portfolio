@@ -1,0 +1,137 @@
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+    margin-inline: auto !important;
+}
+
+.card-list .card-item{
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.096);
+    border: 1px solid rgba(255, 0, 0, 0.582);
+}
+
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #ff0000;
+    padding: 4px;
+}
+
+.user-name{
+    font-family: "Istok Web", sans-serif;
+}
+
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffa7a7;
+    color: #ffa7a7;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+    transition: 0.5s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+    color: #fc0202;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+.imgVideo {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 25%;
+    margin: 0 auto 40px;
+    position: relative;
+    overflow: hidden; 
+    transition: 1s;
+
+    border: 3px solid #ff0000;
+    padding: 4px;
+}
+
+.Cubo-3D {
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.Cubo-3D img,
+.Cubo-3D video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 1s ease-in-out;
+    padding: 4px;
+}
+
+.Cubo-3D img {
+    z-index: 1;
+    border-radius: 25%;
+    transition: 1s ease-in-out;
+}
+
+.Cubo-3D video {
+    display: none; 
+    z-index: 0; 
+
+}
+
+.Cubo-3D:hover {
+    width: 250px;
+    height: 150px;
+    background: transparent;
+    border-radius: 0;
+    margin: 0 auto 20px;
+
+    border: 1px solid #ffffff00;
+}
+
+.Cubo-3D:hover img {
+    border-radius: 0;
+    opacity: 0;
+}
+
+.Cubo-3D:hover video {
+    display: block;
+    opacity: 1; 
+}

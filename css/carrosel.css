@@ -1,0 +1,184 @@
+.carousel2 {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+  }
+  
+  .carousel2 .list {
+    position: absolute;
+    width: 90%;
+    max-width: 90%;
+    height: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -1.5%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    font-size: 15px;
+    transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+  }
+  
+  .item img {
+    width: 30%; /* Reduz o tamanho das imagens */
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    transition: transform 1.5s, width 1.5s;
+  }
+  
+  .carousel2 .list .item:nth-child(1) {
+    transform: scale(1); /* A imagem 1 será exibida em tamanho normal */
+    z-index: 10;
+  }
+  
+  .carousel2 .list .item:nth-child(2) {
+    transform: scale(0.4) translate(0, 0); /* Reduz o tamanho da imagem 2 e a posiciona no canto inferior direito */
+    z-index: 5;
+    filter: blur(15px); 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+  
+  .carousel2 .list .item:nth-child(3) {
+    display: none; /* Oculta a terceira imagem */
+  }
+
+  .carousel2 .list .item:nth-child(4) {
+    display: none; /* Oculta a terceira imagem */
+  }
+
+  .carousel2 .list .item:nth-child(5) {
+    display: none; /* Oculta a terceira imagem */
+  }
+  
+  .carousel2 .list .item .introduce {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .carousel2 .list .item:nth-child(1) .introduce {
+    opacity: 1;
+    pointer-events: auto;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.5s;
+  }
+  
+  .carousel2 .list .item .introduce .topic {
+    font-size: 1.6em;
+    font-weight: 500;
+    font-family: 'Poppins-Bold';
+    color: white;
+  }
+  
+  .carousel2 .list .item .introduce .topic br {
+    display: none;
+  }
+  
+  .arrows {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-top: 12%;
+  }
+  
+  #voltar, #avanca {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-family: monospace;
+    background-color: transparent;
+    font-size: 30px;
+    color: white;
+  }
+  
+  #avanca {
+    margin-left: auto;
+    margin-right: 100px;
+  }
+  
+  #voltar {
+    margin-right: auto;
+    margin-left: 100px;
+  }
+  
+  .carousel2.showDetail #back {
+    opacity: 1;
+  }
+  
+  .carousel2.showDetail #voltar,
+  .carousel2.showDetail #avanca {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .carousel2::before {
+    width: 500px;
+    height: 300px;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 20% 30% 80% 10%;
+    filter: blur(150px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    transition: 1s;
+  }
+  
+  .carousel2.showDetail::before {
+    transform: translate(-100%, -50%) rotate(90deg);
+    filter: blur(130px);
+  }
+
+/* Title abilites */
+.titleHtml{
+    color: #E44D26;
+    font-size: 3.6em;
+    font-weight: 500;
+    line-height: 1em;
+    font-family: 'Poppins-Light';
+}
+
+.titleCss{
+    color: #2965F1;
+    font-size: 3.6em;
+    font-weight: 500;
+    line-height: 1em;
+    font-family: 'Poppins-Light';
+}
+
+.titleJs{
+    color: #F5DE19;
+    font-size: 3.6em;
+    font-weight: 500;
+    line-height: 1em;
+    font-family: 'Poppins-Light';
+}
+
+.titlePhp{
+  color: #505E9B;
+  font-size: 3.6em;
+  font-weight: 500;
+  line-height: 1em;
+  font-family: 'Poppins-Light';
+}
+
+.titleFigma{
+  color: #FF7262;
+  font-size: 3.6em;
+  font-weight: 500;
+  line-height: 1em;
+  font-family: 'Poppins-Light';
+}

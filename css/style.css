@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0D0D0D;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;      
+    background: transparent;         /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #FF0000;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+.inicio{
+    width: 100%;
+    
+}
+
+.inicioPort{
+    height: 100vh;
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    width: 100%;
+}
+
+.logoPort{
+    width: 60px;
+    margin-left: 5%;
+    margin-top: 1%;
+
+
+}
+
+.linksHeader{
+    display: flex;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-right: 10%;
+    justify-content: space-evenly !important; 
+}
+
+.efectHeader{
+    color: #FF0000;
+    margin-top: -1.5px;
+    margin-right: 1px;
+    transition: 0.7s;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
+    position: relative;
+    margin-inline: 20px;
+}
+
+.links a{
+    transition: 0.7s;
+}
+
+.links:hover{
+    color: #FF0000;
+}
+
+.fundoInicio{
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.Apresentacao{
+    background-color: #0D0D0D;
+    position: absolute;
+    width: 550px;
+    margin-top: 160px;
+    margin-left: 200px;
+}
+
+.Apresentacao .nome{
+    color: #FF0000;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+}
+
+.Apresentacao .curso, .sobre{
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.curso{
+    font-size: 40px ;
+}
+
+.saibaMais{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #B80000;
+    margin-top: 15px;
+}
+
+.saibaMais a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.efeitosInicio{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 100%;
+    text-align: end;
+    align-items: end;
+}
+
+.quadrado{
+    width: 60px;
+    height: 60px;
+    background-color: #FF0000;
+    margin-top: 30px;
+    margin-right: 100px;
+    animation: quadrado 5.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.efeitosInicio .quadrado:nth-child(1) {
+
+    animation-delay: -5s;
+  }
+  .efeitosInicio .quadrado:nth-child(2) {
+
+    animation-delay: -4s;
+  }
+  .efeitosInicio .quadrado:nth-child(3) {
+
+    animation-delay: -3s;
+  }
+
+  .efeitosInicio .quadrado:nth-child(4) {
+
+    animation-delay: -2s;
+  }
+
+  .efeitosInicio .quadrado:nth-child(5) {
+
+    animation-delay: -1s;
+  }
+  @keyframes quadrado {
+    0% {
+        background-color: #490000;
+    }
+    25%{
+        background-color: #880000;
+        width: 70px;
+        height: 70px;
+    }
+
+    50% {
+        background-color: #FF0000;
+        width: 80px;
+        height: 80px;
+    }
+    75%{
+        background-color: #880000;
+        width: 70px;
+        height: 70px;
+    }
+
+    100% {
+        background-color: #490000;
+    }
+  }
+
+.sobreMim{
+    height: 100vh;
+    width: 100%;
+}
+
+.titleSobre{
+    color: #FF0000;
+    font-size: 35px;
+    width: 500px;
+    font-family: "Inter", sans-serif;
+    margin-top: 25vh;
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.sobreTitle{
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 52%, rgb(255, 255, 255) 52%, rgb(255, 255, 255) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+}
+
+.sobreTitle h1{
+    margin-top: 40px;
+}
+
+.textoSobre{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.linksConhecer{
+    width: 500px;
+    margin-right: auto;
+    margin-left: 100px;
+    font-size: 50px;
+    transition: 1s;
+}
+
+.linksConhecer i{
+    background-image: linear-gradient(150deg, rgb(173, 0, 0) 0%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 1s;
+}
+
+.linksConhecer:hover i{
+    background-image: linear-gradient(-150deg, rgb(173, 0, 0) 0%, rgba(255,0,0,1) 100%);
+}
+
+.habilidades{
+    width: 100%;
+    height: 100vh;
+}
+
+.habilidadesTitle{
+    color: #FF0000;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+}
+
+.projetos{
+    height: 100vh;
+}
+
+.projetosTitle{
+    color: #FF0000;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+}
+
+.slide{
+    height: 50vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.entreContato{
+    height: 20vh;
+    background-color: #070707;
+    text-align: center;
+    color: #fff;
+}
+
+.redeSocial{
+    margin-top: 10px ;
+}
+
+.redeSocial a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.redeSocial .bxl-github{
+    transition: 0.7s ease-in;
+}
+
+.redeSocial .bxl-github:hover{
+    background: linear-gradient(165deg, rgb(41, 41, 41) 0%, rgb(48, 48, 48) 78%, rgba(76, 76, 76, 0.855) 93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.redeSocial .bxl-instagram{
+    transition: 0.7s ease-in;
+}
+
+.redeSocial .bxl-instagram:hover{
+    background: linear-gradient(165deg, rgba(85,34,255,1) 0%, rgba(255,0,0,1) 78%, rgba(233,255,0,0.8547794117647058) 93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.redeSocial .bxl-linkedin-square{
+    transition: 0.7s ease-in;
+}
+
+.redeSocial .bxl-linkedin-square:hover{
+    background: linear-gradient(165deg, rgb(72, 40, 255) 0%, rgb(23, 38, 255) 78%, rgba(4, 0, 255, 0.855) 93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.copy{
+    margin-top: auto;
+}
