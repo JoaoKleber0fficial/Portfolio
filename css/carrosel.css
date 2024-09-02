@@ -1,0 +1,57 @@
+:root{
+  --sombra: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.25);
+}
+
+.Linguagens{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-inline: auto;
+  overflow: hidden;
+
+  mask: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(153,0,0,1) 13%, rgba(153,0,0,1) 83%, rgba(153,0,0,0) 100%)
+}
+
+.titleLinguagens{
+  color: #FF0000;
+  margin: auto;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+}
+
+.carousel-item h2{
+  color: #BE0000;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  margin: auto;
+  width: max-content;
+  animation: scrollInfinite 10s linear infinite;
+}
+
+.carousel-item {
+  padding: 10px 25px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  color: #f00;
+  border-radius: 10px;
+}
+
+@keyframes scrollInfinite{
+  from{
+    translate: 0;
+  }
+  to {
+    translate: calc(-50% - 5px);
+  }
+}
