@@ -1,2 +1,2 @@
 **My Portfolio**
- -😵Ainda não finalizado😵
+ -😵Agora Finalisado, mais atualizações futuras😵
