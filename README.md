@@ -1,2 +1,2 @@
 **My Portfolio**
- -😵Finalizado, mais atualizações futuras😵
+ -Finalizado, conheça os codigos presentes no meu Portfolio tenha liberdade para se aprofundar
